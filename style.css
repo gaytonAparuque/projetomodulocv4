@@ -1,0 +1,404 @@
+:root{
+    --preto-header: #101111;
+    --preto-secundario: #1A1A1A;
+    --branco: #ffffff;
+    --cinza-card: #f5f6f8;
+    
+    --verde-botao: #2fbf4a;
+    --verde-hover: #25993b;
+    --verde-tag-new: #a8e6b0;
+
+    --vermelho-sale: #e53935;
+    --texto-principal: #121212;
+    --texto-secundario: #6b7280;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: var(--preto-header);
+    color: var(--branco);
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #6b7280;
+}
+.contn{
+    width: 100%;
+}
+.container{
+    width: 90%;
+}
+#containerNav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#aDiv{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+.aNav{
+    color: var(--branco);
+    text-decoration: none;
+}
+.aNav:hover{
+    color: var(--verde-hover);
+    text-decoration: underline;
+}
+
+#header-main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    background: url(img/1792338450205.jpg);
+    background-size: cover; 
+    background-position: center center;
+}
+#pai-bloco{
+    display: flex;
+    align-items: center;
+}
+#bloco-principal{
+    color: var(--branco);
+    width: 50%;
+}
+.buy-now{
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--verde-botao);
+    color: var(--branco);
+    font-size: 15px;
+    margin-top: 18px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.buy-now:hover{
+    background-color: var(--verde-hover);
+    cursor: pointer;
+}
+#foot-header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--preto-header);
+    color: var(--branco);
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid #6b7280;
+}
+#contFooter-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contlogo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    background-position: center center;
+    background-size: cover;
+}
+#logofrete{
+    background-image: url(img/express-delivery.png);
+}
+#logoreembolso{
+    background-image: url(img/check.png);
+}
+#logosuporte{
+    background-image: url(img/technical-support.png);
+}
+
+
+/*PRODUTOS*/
+main{
+    width: 100%;
+}
+#contmain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section{
+    margin: 0;
+    width: 80%;
+}
+/* ========== SECÇÃO ========== */
+.produtos {
+  max-width: 1000px;   /* centra a secção */
+  padding: 30px;
+}
+
+/* Título com uma linha de cada lado */
+.produtos h2 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.produtos h2::before,
+.produtos h2::after {
+  content: "";
+  flex: 1;                         /* a linha ocupa o espaço livre */
+  height: 1px;
+  background-color: #ddd;
+  margin: 0 20px;
+}
+
+/* ========== GRELHA DE 4 COLUNAS ========== */
+.grelha {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas iguais */
+  gap: 15px;                             /* espaço entre os cartões */
+}
+
+/* ========== CARTÃO ========== */
+.cartao {
+  position: relative;      /* permite posicionar a etiqueta dentro do cartão */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0 0 15px 0;
+  background-color: white;
+}
+
+/* Caixa cinzenta onde fica a foto */
+.foto {
+  background-color: #f2f2f5;
+}
+
+.foto img {
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: contain;      /* a imagem cabe toda na caixa */
+  mix-blend-mode: multiply; /* o fundo branco da foto mistura-se com o cinzento */
+}
+
+.cartao h3 {
+  font-size: 15px;
+  margin: 12px 10px 8px 10px;
+}
+
+.preco {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 10px 12px 10px;
+}
+
+/* ========== BOTÃO VERDE ========== */
+.botao {
+  display: block;          /* ocupa a largura toda do cartão */
+  background-color: var(--verde-botao);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 3px;
+}
+.botao:hover {
+    background-color: var(--verde-hover);
+}
+/* ========== ETIQUETAS NEW E SALE ========== */
+.etiqueta {
+  position: absolute;      /* fica no canto do cartão */
+  top: 8px;
+  right: 0;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 10px;
+}
+
+.nova {
+  background-color: var(--verde-botao);
+}
+
+.promocao {
+  background-color: #d62828;
+}
+
+/* ========== PREÇO EM PROMOÇÃO ========== */
+.preco-promocao {
+  font-size: 13px;
+  margin: -5px 10px 12px 10px;
+}
+
+.novo {
+  color: #d62828;
+  font-weight: bold;
+}
+
+/*==============GINENCIA===========*/
+#promocont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#promo{
+    width: 80%;
+    max-width: 1000px;
+    padding: 0;
+    background: url(img/1792338450205.jpg);
+    color: var(--branco);
+    background-position: center center;
+    background-size: cover;
+    height: 140px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+/*=========================FOOTER-YURA==========================*/
+/* Rodapé */
+.footer {
+    width: 100%;
+    background-color: #151515;
+    color: var(--branco);
+}
+
+/* Newsletter */
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px 9%;
+    background-color: #202124;
+    border-bottom: 1px solid #303030;
+}
+
+.newsletter-text h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.newsletter-text p {
+    font-size: 17px;
+    color: #eeeeee;
+}
+
+/* Formulário */
+.newsletter-form {
+    display: flex;
+    flex: 1;
+    max-width: 830px;
+    height: 70px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 20px 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #222222;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter-form button {
+    padding: 0 45px;
+    background-color: #279b16;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.newsletter-form button:hover {
+    background-color: var(--verde-hover);
+}
+
+/* Conteúdo inferior */
+.footer-content {
+    display: grid;
+    grid-template-columns: 200px 230px 1fr;
+    gap: 25px;
+    padding: 25px 9%;
+}
+
+.footer-column h3,
+.footer-social h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.footer-column a {
+    display: block;
+    width: fit-content;
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column a:hover {
+    color: #279b16;
+}
+
+/* Redes sociais */
+.footer-social {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    column-gap: 20px;
+}
+
+.footer-social h3 {
+    grid-column: 1;
+}
+
+.social-icons {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #279b16;
+}
+
+.copyright {
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    color: #cccccc;
+    font-size: 16px;
+}
+
+
+
+
+
